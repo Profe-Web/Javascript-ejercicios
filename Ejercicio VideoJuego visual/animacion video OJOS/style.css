@@ -1,0 +1,93 @@
+/* html{
+    cursor: url("imagenes/mano-dedo.cur");
+}
+ */
+/* programar de abajo arriba (bottom-up): primero miro que funcione, después mejoraré la presentación)
+y de arriba abajo (top-bottom), primero la presentación y luego la funcionalidad*/
+
+.cabecera{
+    display: flex;
+    justify-content: space-around;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    color: brown;
+    background-color: aqua;
+}
+
+.titulo{
+    font-size: xxx-large;
+}
+
+
+.puntuacion{
+    
+    align-items: baseline;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    color:blueviolet
+}
+
+
+.grupo{
+    display: flex;
+}
+
+
+.pelota, .pelotaBis, .pelota2, .pelota2Bis, .pelota3, .pelota4, .pelota4Bis, .pelota5, .pelota5Bis {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 50%;
+    /*border: solid grey 2px;*/
+    animation-name: animacion1;
+    animation-duration: 3.5s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: paused;
+    /*animation: animacion1 2s ease 3 alternate;*/
+}
+
+.pelota, .pelotaBis{
+    background-image: url("ojos-gif/eyes-animated-gif-1.gif");
+    background-size: contain;
+}
+
+.pelota2, .pelota2Bis{
+    background-image: url("ojos-gif/R.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-duration: 4.5s;
+}
+
+.pelota3{
+    width: 50px;
+    height: 50px;
+    background-image: url("ojos-gif/giphy.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-duration: 2.5s;
+}
+
+.pelota4, .pelota4Bis{
+    width: 150px;
+    height: 150px;
+    background-image: url("ojos-gif/blinking-eye-gif.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-duration: 3s;
+}
+
+.pelota5, .pelota5Bis{
+    width: 80px;
+    height: 80px;
+    background-image: url("ojos-gif/eyes-animated-gif-1.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-duration: 3s;
+}
+
+@keyframes animacion1{
+    0% {transform: translateX(-100px)}
+    100%{transform: translateX(1000px)}
+}

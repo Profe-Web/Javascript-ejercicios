@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- CABECERA -->
+    <div class="cabecera">
+        <div class="titulo">Dedo en el ojo!</div>
+        <div class="puntuacion">
+            <div>Puntuación:</div>
+            <div id="puntos"></div>
+        </div>
+        <div class="contador">
+            <div>TIME:</div>
+            <div id="cuentaAtras"></div>
+        </div>
+    </div>
+    
+    <br><br>
+
+    <!-- MAIN (OJOS) -->
+    <div class="main">
+        <div class="grupo">
+            <div class="pelota" onclick="pelotazoSTOP()" ></div>
+            <div class="pelotaBis" onclick="pelotazoSTOPbis()" ></div>
+        </div>
+        <br>
+        <div class="grupo">
+            <div class="pelota2" onclick="pelotazoSTOP2()" ></div>
+            <div class="pelota2Bis" onclick="pelotazoSTOP2bis()" ></div>
+        </div>
+        <br>
+        <div class="pelota3" onclick="pelotazoSTOP3()" ></div>
+        <br>
+        <div class="grupo">
+            <div class="pelota4" onclick="pelotazoSTOP4()" ></div>
+            <div class="pelota4Bis" onclick="pelotazoSTOP4bis()" ></div>
+        </div>
+        <br>
+        <div class="grupo">
+            <div class="pelota5" onclick="pelotazoSTOP5()" ></div>
+            <div class="pelota5Bis" onclick="pelotazoSTOP5bis()" ></div>
+        </div>
+    </div>
+    
+    <script src="pelota.js"></script>
+</body>
+</html>
