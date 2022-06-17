@@ -1,2 +1,2 @@
-# ejercicios
-diversos
+# ejercicios javascript
+diversos niveles
